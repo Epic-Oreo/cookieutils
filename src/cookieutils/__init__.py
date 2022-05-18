@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 import os
 if os.name=='nt': # windows
   __operating_system__ = "windows"

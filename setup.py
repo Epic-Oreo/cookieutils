@@ -4,10 +4,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="cookieutils-epicoreo",
-    version="0.0.2",
+    name="cookieutils",
+    version="0.0.3",
     author="Epic Oreo",
-    author_email="author@example.com",
+    author_email="none@example.com",
     description="A ton of usefull utils for python console applications",
     long_description=long_description,
     long_description_content_type="text/markdown",
