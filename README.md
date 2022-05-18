@@ -8,24 +8,4 @@ To install the modual run
 ```console
 pip install cookieutils
 ```
-if you are running it on [replit](replit.com)
-
-# add a wiki!!
-
-
-Usar
-----
-
-```
-
-Test
-----
-Instalar pytest
-```console
-(venv) ~/python-module-boilerplate ❯❯❯ pip install pytest
-```
-
-Ejecutar pytest -v
-```console
-(venv) ~/python-module-boilerplate ❯❯❯ pytest -v
-```
+for more info visit [https://epic-oreo.gitbook.io/cookie-utils/](https://epic-oreo.gitbook.io/cookie-utils/)
