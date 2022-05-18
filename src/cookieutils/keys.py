@@ -1,14 +1,16 @@
 import os, sys
-
-from key import CKey
+from cookieutils.key import CKey
 import time
-import __init__
+import cookieutils
+
 if os.name=='nt': # windows
   from pynput import keyboard
 else: #unix
   import tty,termios
 
-operating_system = __init__.get_os()
+operating_system = cookieutils.get_os()
+
+
 
 def __presets(key):
     map = {
@@ -23,7 +25,6 @@ def __presets(key):
         "left":  CKey.left
     }
     if key.name in map.keys():
-        print(key.name)
         return map[key.name]
     else:
         return False

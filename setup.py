@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="cookieutils-epicoreo",
-    version="0.0.1",
+    version="0.0.2",
     author="Epic Oreo",
     author_email="author@example.com",
     description="A ton of usefull utils for python console applications",
