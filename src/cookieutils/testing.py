@@ -1,12 +1,5 @@
-from discord import DefaultAvatar
-import database
+from cookieutils import keys, key
 
 
-db = database.db()
 
 
-db["test"] = 100
-
-print(db["test"])
-
-print(db)

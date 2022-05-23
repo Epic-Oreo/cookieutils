@@ -1,7 +1,8 @@
 import json
 import base64
 
-# format name: super exterior e xanthine or Cookie User friendly Memory Bank
+# ideas: Cookie User Memory 
+# ideas: python external network index system <-- good 
 
 
 
