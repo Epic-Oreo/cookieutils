@@ -1,4 +1,3 @@
-from fileinput import filename
 import os, json
 def is_replit():
     if ([k for k in os.environ.keys() if 'REPLIT_' in k]): # checks if there are env vars that have REPLIT_ in them

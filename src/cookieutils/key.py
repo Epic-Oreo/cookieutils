@@ -1,4 +1,3 @@
-import enum
 class CKey():
     """A class representing various buttons that may not correspond to
     letters. This includes modifier keys and function keys.

@@ -10,6 +10,7 @@ def hex(length):
 def uuid():
     return uuid_modual.uuid4()
 
+
 def custom(length, low=False,up=True,numbers=True,symbols=False,custom:list=None):
     if not custom:
         chars = []

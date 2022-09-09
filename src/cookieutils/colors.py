@@ -1,9 +1,15 @@
-def color(text:str, color:int=15, bgcolor:int=None):
+def color(text:str, color:int=15, bgcolor:int=None, reset=True):
     if bgcolor:
-        return(f"\033[48;5;{bgcolor}m\033[38;5;{color}m{text}\033[0;0m")
-    else:
-        return(f"\033[38;5;{str(color)}m{str(text)}\033[0;0m")
+        tmp =  f"\033[48;5;{bgcolor}m\033[38;5;{color}m{text}"
+        if reset:
+            tmp = tmp + "\033[0;0m"
+        return tmp
 
+    else:
+        tmp =  f"\033[38;5;{str(color)}m{str(text)}\033[0;0m"
+        if reset:
+            tmp = tmp + "\033[0;0m"
+        return tmp
 
 
 
@@ -29,3 +35,4 @@ def hex_to_xterm(hex):
         hex = hex.lstrip('#')
 
     return rgb_to_xterm(tuple(int(hex[i:i+2], 16) for i in (0, 2, 4)))
+

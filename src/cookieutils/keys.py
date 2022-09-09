@@ -30,7 +30,7 @@ def __presets(key):
         return False
 
 
-def __getkey():
+def __getkey(): # this is a unix only function
     old_settings = termios.tcgetattr(sys.stdin)
     tty.setcbreak(sys.stdin.fileno())
     try:
@@ -56,8 +56,8 @@ def __getkey():
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
 
 
-def get():
-    if operating_system == "windows":
+def get(): 
+    if operating_system == "windows": # if the os is windows
         time.sleep(0.3) # gives it some time so it does not pick up missinputs, also prevents it from imidently shutting off for some reason lol idk why
         with keyboard.Events() as events: # if on a windows system
             event = events.get()
