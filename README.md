@@ -1,6 +1,6 @@
 CookieUtils
 =========================
-A modual for usfull utilitys i always needed
+A modual for useful utilitys I always needed
 
 Install
 --------
